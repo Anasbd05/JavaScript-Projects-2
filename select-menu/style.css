@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: black ; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.selecteur{
+    width: 350px;
+}
+#selectField{
+    width: 100%;
+    padding: 15px 20px;
+    margin: 30px 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background: lightcoral;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#selectField img{
+    width: 20px;
+}
+#list{
+    width: 100%;
+    background: lightcoral;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: -39px;
+    border-top: 1px solid snow;
+}
+.options{
+    width: 100%;
+    padding: 15px;
+    list-style: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    gap: 20px;
+    transition:  background-color .6s;
+}
+.options img{
+    width: 25px;
+    transition: transform 6s;
+}
+.options:hover{
+    background: rgb(238, 180, 180);
+}
+.hide{
+    visibility: hidden;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+h1{
+    background: linear-gradient(to right , darkred ,rgb(163, 19, 19) );
+    background-clip: text;
+    color: transparent;
+    background-size: 200%;
+    animation: anime 3s infinite ease-out;
+}
+@keyframes anime {
+    0% {
+        background-position: 200%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
+h2{
+    padding: 20px;
+    text-shadow: 
+    0 0 10px skyblue,
+    0 0 15px skyblue,
+    0 0 20px skyblue,
+    0 0 30px skyblue; 
+}
+::selection{
+    background: lightcoral;
+    color: aliceblue;
+}

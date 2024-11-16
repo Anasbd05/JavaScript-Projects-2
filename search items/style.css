@@ -1,0 +1,33 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    width: 70%;
+    border: 2px solid silver;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input::placeholder {
+    font-size: 12px;
+    color: #555;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    width: 70%;
+    margin-left: -40px;
+}
+li{
+    
+    margin: 5px;
+    background: lightgray;
+    display: block ;
+    padding:  8px;
+}

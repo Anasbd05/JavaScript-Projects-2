@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    color: snow;
+    margin: 40px 20px;
+    font-size: 14px;
+}
+
+.container h1 {
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to top, teal, rgb(223, 235, 240));
+    background-clip: text;
+    color: transparent;
+    margin: 40px 0;
+}
+
+.container button {
+    margin: 20px 0;
+    padding: 5px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    background-image: linear-gradient(to top, rgb(141, 225, 225), rgb(91, 122, 135));
+    transition: background-image 7s;
+}
+
+.container button:hover {
+    background-image: linear-gradient(to bottom, teal, rgb(223, 235, 240));
+}
+
+.input-box {
+    border: 1px solid lightgray;
+    width: 200px;
+    background-color: snow;
+    padding: 8px 15px;
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+input {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.input-box button {
+    border: none;
+    padding: 5px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    background: transparent;
+    transition: color .5s;
+}
+
+.input-box button:hover {
+    color: silver;
+}
+
+
+div.cursor {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    box-shadow: 10px 10px 500px rgb(255, 255, 255);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}

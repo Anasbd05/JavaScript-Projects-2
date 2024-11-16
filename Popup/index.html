@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="content-container">
+            <h1 id="guest">Welcome guest</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Provident vel officia accusantium numquam a libero enim 
+                accusamus debitis nam rem, nesciunt odio!Quam facere 
+                perferendis possimus adipisci, repellat totam ab?
+            </p>
+            <button class="cta-btn" id="open">Sign up</button>
+        </div>
+    </header>
+
+    <section class="modal-container" id="modal">
+        <section class="modal">
+            <button class="close-btn" id="close">✂</button>
+                <div class="modal-content">
+                    <h1>Sign Up</h1>
+                    <form class="modal-form">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-input"
+                             placeholder="Enter your Name"required />
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="text" id="email" class="form-input"
+                             placeholder="Enter your Email"required />
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="text" id="password" class="form-input"
+                             placeholder="Enter Your Password"required minlength="6" maxlength="12" />
+                        </div>
+                        <div>
+                            <label for="password2">Valid Password</label>
+                            <input type="password" id="password2" class="form-input"
+                             placeholder="valid your password" required minlength="6" maxlength="12" />
+                        </div>
+                        <input type="submit" value="Submit" class="submitBtn">
+                    </form>
+                </div>
+        </section>
+    </section>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background: burlywood;
+    align-items: center;
+    justify-content: center;
+}
+
+.product {
+    width: 94%;
+    max-width: 750px;
+    display: flex;
+}
+
+.gallary {
+    position: relative;
+    flex-basis: 47%;
+    background: bisque;
+    scale: 1.08;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.gallary img {
+    width: 100%;
+    display: block;
+    height: 340px;
+    object-fit: cover;
+    margin-top: 30px;
+}
+
+.details {
+    flex-basis: 53%;
+    background: blanchedalmond;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 40px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    font-size: 13px;
+    font-weight: 500;
+    color: #707070;
+}
+
+.details h1 {
+    color: #333;
+    margin-top: -15px;
+    margin-bottom: 5px;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.details h2 {
+    color: #444;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.details h3 {
+    color: orangered;
+    font-size: 10px;
+    margin: 2px;
+    margin-bottom: 20px;
+}
+
+form {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.size-select {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.size-select p {
+    width: 70px;
+}
+
+.size-select input:checked+span {
+    color: black;
+    font-weight: bold;
+}
+
+.size-select input {
+    display: none;
+}
+
+.size-select span {
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.color-select {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.color-select p {
+    width: 75px;
+
+}
+
+.color-select span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.color-1 {
+    background: orangered;
+}
+
+.color-2 {
+    background: mediumseagreen;
+}
+
+.color-3 {
+    background: rgb(1, 132, 183);
+}
+
+.color-4 {
+    background: gray;
+}
+
+.color-select input {
+    display: none;
+}
+
+.color-select input:checked+span {
+    scale: 1.05;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px black;
+}
+
+.quantity-select {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quantity-select p {
+    width: 75px;
+}
+
+.quantity-select input {
+    background: #151515;
+    border: none;
+    outline: none;
+    padding: 4px 10px;
+    color: whitesmoke;
+    width: 60px;
+    border-radius: 12px;
+}
+
+form button {
+    margin-top: 40px;
+    width: 100%;
+    border: 2px solid;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.434);
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color .7s;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+form button:hover {
+    background-color: burlywood;
+}
+
+.control {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+}
+.btn {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #555;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+.btn.active{
+    background: brown;
+}

@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 5000px;
+    background: blanchedalmond;
+    padding: 70px;
+    width: 100%;
+}
+
+#btn {
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    font-size: 30px;
+    border: none;
+    background: transparent;
+}
+
+.container {
+    background-color: black;
+    color: lightgray;
+    padding: 30px 40px;
+    margin: 10px auto;
+    border-radius: 10px;
+    width: 70%;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+.para {
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.para .cont2 {
+    display: none;
+}
+
+.read {
+    padding: 5px 20px;
+    background: linear-gradient(to right, rgb(179, 0, 0), orange);
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.read:hover {
+    background: orangered;
+}
+
+.para .cont2.active {
+    display: block;
+}
